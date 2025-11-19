@@ -1,6 +1,5 @@
 # AI-Based Evaluation Platform
 
-**Deployment:** [https://ai-based-evaluation-platform.onrender.com/](https://ai-based-evaluation-platform.onrender.com/)
 
 ## Overview
 
@@ -66,8 +65,3 @@ The AI-Based Evaluation Platform is a comprehensive web application designed to 
 - **Pinecone Vector Store:** Create a 768-dimension index, then configure `PINECONE_API_KEY` and `PINECONE_INDEX_NAME`. Reference documents and student submissions will be chunked, embedded, and upserted automatically for similarity search.
 - **Reference-aware Grading:** Faculty can attach a reference PDF during assignment creation. The backend ingests it into Pinecone and the grader retrieves the most relevant chunks to power the RAG evaluation pipeline.
 - **Handwritten Workflow:** Assignment creation now accepts a “Handwritten Required” checkbox/flag. When enabled, submissions must be detected as handwritten (via OCR extraction) or they are rejected; plagiarism matches automatically zero both the offending submission and the copied source with clear “cheating detected” feedback. Deleting an assignment also purges its Pinecone namespace automatically.
-
-## Live Platform
-
-Access the deployed platform here:  
-**[https://ai-based-evaluation-platform.onrender.com/](https://ai-based-evaluation-platform.onrender.com/)** 
